@@ -95,7 +95,7 @@ namespace _322_Chekushin
                 user.Password = GetHash(NewPasswordBox.Password);
                 Entities.GetContext().SaveChanges();
                 MessageBox.Show("Пароль успешно изменен!");
-                NavigationService?.Navigate(new AuthPage());
+                NavigationService?.Navigate(new Pages.AuthPage());
             }
             catch (Exception ex)
             {
